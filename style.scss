@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat:wght@700&display=swap");
+
+body {
+  background: #040404;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  grid-template-columns: repeat(3, 245px);
+  column-gap: 100px;
+  display: grid;
+
+  &__content {
+    width: 245px;
+  }
+  &__image {
+    width: 245px;
+    height: 256px;
+    border-radius: 30px;
+  }
+
+  &__text {
+    padding: 0 11px 0 11px;
+    row-gap: 24px;
+    display: grid;
+    margin: 25px 0 0 0;
+  }
+
+  &__title {
+    display: block;
+    max-width: 189px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 110%;
+
+    color: #eeeeee;
+  }
+
+  &__link {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: max-content max-content;
+  }
+
+  &__name {
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 110%;
+
+    color: #636363;
+  }
+}
+
+//input
+
+input,
+input:focus,
+input:active,
+button:focus,
+button:active {
+  border: none;
+  outline: none;
+}
+
+.thirteenth {
+  &__field {
+    border: 2px solid #555555cc;
+    border-radius: 50px;
+    max-width: 770px;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+  }
+
+  &__input {
+    background: transparent;
+    padding: 49px 0px 48px 60px;
+    width: 100%;
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 110%;
+
+    color: #dddddd;
+
+    &::placeholder {
+      font-family: "Fira Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 110%;
+
+      color: #dddddd;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 15px;
+    right: 18px;
+
+    max-width: 181px;
+    width: 100%;
+    max-height: 91px;
+    height: 100%;
+
+    background: linear-gradient(270.81deg, #8e54e9 11.77%, #4776e6 104.6%);
+    border-radius: 32px;
+
+    border: none;
+    cursor: pointer;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 110%;
+
+    color: #ffffff;
+  }
+}
